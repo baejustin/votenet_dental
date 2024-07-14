@@ -302,9 +302,9 @@ class QueryAndGroup(nn.Module):
     nsample : int32
         Maximum number of features to gather in the ball
     """
-
-    def __init__(self, radius, nsample, use_xyz=True, ret_grouped_xyz=False, normalize_xyz=False, sample_uniformly=False, ret_unique_cnt=False):
         # type: (QueryAndGroup, float, int, bool) -> None
+    def __init__(self, radius, nsample, use_xyz=True, ret_grouped_xyz=False, normalize_xyz=False, sample_uniformly=False, ret_unique_cnt=False):
+
         super(QueryAndGroup, self).__init__()
         self.radius, self.nsample, self.use_xyz = radius, nsample, use_xyz
         self.ret_grouped_xyz = ret_grouped_xyz
